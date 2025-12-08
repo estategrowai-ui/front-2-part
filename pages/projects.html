@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты - Портфолио студента</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body class="bg-light">
+    <div class="container-fluid p-0 d-flex flex-column min-vh-100">
+        <!-- Header -->
+        <header class="bg-primary text-white py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="h3 mb-1">Мой Портфолио</h1>
+                        <p class="mb-0 opacity-75">Студент разработчик</p>
+                    </div>
+                    <div class="col-auto">
+                        <span class="badge bg-light text-primary">ЭФБО-09-24</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <i class="bi bi-house me-1"></i>Главная
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="projects.html">
+                                <i class="bi bi-folder-fill me-1"></i>Проекты
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="diary.html">
+                                <i class="bi bi-journal-text me-1"></i>Учебный дневник
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">
+                                <i class="bi bi-telephone me-1"></i>Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="container my-5 flex-grow-1">
+            <h1 class="h2 mb-4">
+                <i class="bi bi-folder-fill text-primary"></i>
+                Мои проекты
+            </h1>
+
+            <!-- Projects Grid -->
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm project-card" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                        <img src="../images/project1.jpg" class="card-img-top" alt="Личный сайт" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <i class="bi bi-globe text-primary"></i>
+                                Личный сайт
+                            </h5>
+                            <p class="card-text text-muted small">Сайт-портфолио на HTML, CSS и Bootstrap с адаптивным дизайном.</p>
+                            <div class="mt-auto">
+                                <div class="mb-2">
+                                    <span class="badge bg-primary">HTML</span>
+                                    <span class="badge bg-primary">CSS</span>
+                                    <span class="badge bg-primary">Bootstrap</span>
+                                </div>
+                                <button class="btn btn-outline-primary btn-sm w-100">
+                                    <i class="bi bi-eye me-1"></i>Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm project-card" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                        <img src="../images/project2.jpg" class="card-img-top" alt="Todo приложение" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <i class="bi bi-check2-square text-success"></i>
+                                Todo приложение
+                            </h5>
+                            <p class="card-text text-muted small">Приложение для управления задачами с использованием JavaScript и LocalStorage.</p>
+                            <div class="mt-auto">
+                                <div class="mb-2">
+                                    <span class="badge bg-success">JavaScript</span>
+                                    <span class="badge bg-success">LocalStorage</span>
+                                </div>
+                                <button class="btn btn-outline-success btn-sm w-100">
+                                    <i class="bi bi-eye me-1"></i>Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm project-card" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                        <img src="../images/project3.jpg" class="card-img-top" alt="Интернет-магазин" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <i class="bi bi-cart text-info"></i>
+                                Интернет-магазин
+                            </h5>
+                            <p class="card-text text-muted small">Прототип интернет-магазина с корзиной товаров и фильтрацией.</p>
+                            <div class="mt-auto">
+                                <div class="mb-2">
+                                    <span class="badge bg-info">React</span>
+                                    <span class="badge bg-info">API</span>
+                                </div>
+                                <button class="btn btn-outline-info btn-sm w-100">
+                                    <i class="bi bi-eye me-1"></i>Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm project-card" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                        <img src="../images/blitz.jpg" class="card-img-top" alt="Веб-приложение" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <i class="bi bi-code-slash text-warning"></i>
+                                Веб-приложение
+                            </h5>
+                            <p class="card-text text-muted small">Современное веб-приложение с использованием React и Node.js.</p>
+                            <div class="mt-auto">
+                                <div class="mb-2">
+                                    <span class="badge bg-warning">React</span>
+                                    <span class="badge bg-warning">Node.js</span>
+                                </div>
+                                <button class="btn btn-outline-warning btn-sm w-100">
+                                    <i class="bi bi-eye me-1"></i>Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm project-card" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                        <img src="../images/project5.jpg" class="card-img-top" alt="Мобильное приложение" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <i class="bi bi-phone text-danger"></i>
+                                Мобильное приложение
+                            </h5>
+                            <p class="card-text text-muted small">Кроссплатформенное мобильное приложение на React Native.</p>
+                            <div class="mt-auto">
+                                <div class="mb-2">
+                                    <span class="badge bg-danger">React Native</span>
+                                    <span class="badge bg-danger">Mobile</span>
+                                </div>
+                                <button class="btn btn-outline-danger btn-sm w-100">
+                                    <i class="bi bi-eye me-1"></i>Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm project-card" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                        <img src="../images/project6.jpg" class="card-img-top" alt="API сервис" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <i class="bi bi-server text-secondary"></i>
+                                API сервис
+                            </h5>
+                            <p class="card-text text-muted small">RESTful API сервис для управления данными с документацией.</p>
+                            <div class="mt-auto">
+                                <div class="mb-2">
+                                    <span class="badge bg-secondary">Node.js</span>
+                                    <span class="badge bg-secondary">Express</span>
+                                </div>
+                                <button class="btn btn-outline-secondary btn-sm w-100">
+                                    <i class="bi bi-eye me-1"></i>Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4 mt-auto">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2024 Портфолио студента. Все права защищены.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
+                        <a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal Project 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="projectModal1Label">
+                        <i class="bi bi-globe me-2"></i>Личный сайт
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../images/project1.jpg" class="modal-image mb-3" alt="Личный сайт">
+                    <h6>Описание проекта</h6>
+                    <p>Современный сайт-портфолио, созданный с использованием HTML5, CSS3 и Bootstrap 5. Сайт полностью адаптивный и оптимизирован для всех устройств.</p>
+                    <h6>Технологии</h6>
+                    <div class="mb-3">
+                        <span class="badge bg-primary">HTML5</span>
+                        <span class="badge bg-primary">CSS3</span>
+                        <span class="badge bg-primary">Bootstrap 5</span>
+                        <span class="badge bg-primary">JavaScript</span>
+                    </div>
+                    <h6>Ссылки</h6>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-primary btn-sm" target="_blank">
+                            <i class="bi bi-box-arrow-up-right me-1"></i>Живая версия
+                        </a>
+                        <a href="#" class="btn btn-outline-primary btn-sm" target="_blank">
+                            <i class="bi bi-github me-1"></i>Исходный код
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модалки -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="projectModal2Label">
+                        <i class="bi bi-check2-square me-2"></i>Todo приложение
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../images/project2.jpg" class="modal-image mb-3" alt="Todo приложение">
+                    <h6>Описание проекта</h6>
+                    <p>Интерактивное приложение для управления задачами с возможностью добавления, редактирования и удаления задач. Данные сохраняются в LocalStorage браузера.</p>
+                    <h6>Технологии</h6>
+                    <div class="mb-3">
+                        <span class="badge bg-success">JavaScript</span>
+                        <span class="badge bg-success">LocalStorage</span>
+                        <span class="badge bg-success">HTML/CSS</span>
+                    </div>
+                    <h6>Ссылки</h6>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-success btn-sm" target="_blank">
+                            <i class="bi bi-box-arrow-up-right me-1"></i>Живая версия
+                        </a>
+                        <a href="#" class="btn btn-outline-success btn-sm" target="_blank">
+                            <i class="bi bi-github me-1"></i>Исходный код
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Project 3 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="projectModal3Label">
+                        <i class="bi bi-cart me-2"></i>Интернет-магазин
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../images/project3.jpg" class="modal-image mb-3" alt="Интернет-магазин">
+                    <h6>Описание проекта</h6>
+                    <p>Полнофункциональный прототип интернет-магазина с корзиной покупок, фильтрацией товаров и интеграцией с внешним API для получения данных о продуктах.</p>
+                    <h6>Технологии</h6>
+                    <div class="mb-3">
+                        <span class="badge bg-info">React</span>
+                        <span class="badge bg-info">REST API</span>
+                        <span class="badge bg-info">Context API</span>
+                    </div>
+                    <h6>Ссылки</h6>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-info btn-sm text-white" target="_blank">
+                            <i class="bi bi-box-arrow-up-right me-1"></i>Живая версия
+                        </a>
+                        <a href="#" class="btn btn-outline-info btn-sm" target="_blank">
+                            <i class="bi bi-github me-1"></i>Исходный код
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Project 4 -->
+    <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-dark">
+                    <h5 class="modal-title" id="projectModal4Label">
+                        <i class="bi bi-code-slash me-2"></i>Веб-приложение
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../images/blitz.jpg" class="modal-image mb-3" alt="Веб-приложение">
+                    <h6>Описание проекта</h6>
+                    <p>Современное веб-приложение с использованием React на фронтенде и Node.js на бэкенде. Реализована аутентификация пользователей и работа с базой данных.</p>
+                    <h6>Технологии</h6>
+                    <div class="mb-3">
+                        <span class="badge bg-warning">React</span>
+                        <span class="badge bg-warning">Node.js</span>
+                        <span class="badge bg-warning">MongoDB</span>
+                    </div>
+                    <h6>Ссылки</h6>
+                    <div class="d-flex gap-2">
+                        <a href="https://blitzbit.io/" class="btn btn-warning btn-sm" target="_blank">
+                            <i class="bi bi-box-arrow-up-right me-1"></i>Живая версия
+                        </a>
+                        <a href="#" class="btn btn-outline-warning btn-sm" target="_blank">
+                            <i class="bi bi-github me-1"></i>Исходный код
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Project 5 -->
+    <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="projectModal5Label">
+                        <i class="bi bi-phone me-2"></i>Мобильное приложение
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../images/project5.jpg" class="modal-image mb-3" alt="Мобильное приложение">
+                    <h6>Описание проекта</h6>
+                    <p>Кроссплатформенное мобильное приложение, разработанное на React Native. Приложение работает на iOS и Android с единой кодовой базой.</p>
+                    <h6>Технологии</h6>
+                    <div class="mb-3">
+                        <span class="badge bg-danger">React Native</span>
+                        <span class="badge bg-danger">Expo</span>
+                        <span class="badge bg-danger">Mobile</span>
+                    </div>
+                    <h6>Ссылки</h6>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-danger btn-sm" target="_blank">
+                            <i class="bi bi-box-arrow-up-right me-1"></i>Живая версия
+                        </a>
+                        <a href="#" class="btn btn-outline-danger btn-sm" target="_blank">
+                            <i class="bi bi-github me-1"></i>Исходный код
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Project 6 -->
+    <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary text-white">
+                    <h5 class="modal-title" id="projectModal6Label">
+                        <i class="bi bi-server me-2"></i>API сервис
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../images/project6.jpg" class="modal-image mb-3" alt="API сервис">
+                    <h6>Описание проекта</h6>
+                    <p>RESTful API сервис для управления данными с полной документацией. Реализованы CRUD операции, валидация данных и обработка ошибок.</p>
+                    <h6>Технологии</h6>
+                    <div class="mb-3">
+                        <span class="badge bg-secondary">Node.js</span>
+                        <span class="badge bg-secondary">Express</span>
+                        <span class="badge bg-secondary">MongoDB</span>
+                    </div>
+                    <h6>Ссылки</h6>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-secondary btn-sm" target="_blank">
+                            <i class="bi bi-box-arrow-up-right me-1"></i>Документация
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary btn-sm" target="_blank">
+                            <i class="bi bi-github me-1"></i>Исходный код
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
